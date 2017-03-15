@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Podcasts</h1>
+
+<table id='datatable'
+       class="display nowrap"
+       cellspacing="0"
+       width="100%"
+       data-source="<%= podcasts_path(format: :json) %>">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Itunes url</th>
+      <th>Feed url</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th>Failed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<script>
+  $(document).ready( function () {
+    $.fn.dataTable.moment( 'dd.mm.YYYY' );
+    $('#datatable').DataTable({
+      "processing": true,
+      "serverSide": true,
+      <%= @columns.html_safe %>,
+      "ajax": $('#datatable').data('source'),
+      "pagingType": "full_numbers",
+      "bJquerUI": false,
+      "iDisplayLength": <%= @rowcount || 25 %>,
+      "aLengthMenu": [[10, 25, 100], [10, 25, 100]]
+    });
+  } );
+</script>
+
+<%= link_to 'New Podcast', new_podcast_path %>

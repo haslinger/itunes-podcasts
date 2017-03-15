@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  category: MyString
+  itunes_url: MyString
+  feed_url: MyString
+  failed: false
+
+two:
+  title: MyString
+  category: MyString
+  itunes_url: MyString
+  feed_url: MyString
+  failed: false
