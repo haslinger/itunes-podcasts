@@ -18,7 +18,8 @@ namespace :feeds do
         id = podcast.itunes_url.split("/").last[2..20]
 
         begin
-          metadata = open("https://itunes.apple.com/lookup?id=#{id}&entity=podcast"){|f| f.read }
+          metadata = open("https://itunes.apple.com/lookup?id=#{id}&entity=podcast",
+                          read_timeout: 5){|f| f.read }
           podcast.feed_url = JSON.parse(metadata)["results"].first["feedUrl"]
            %x( paplay #{📁}audio-volume-change.oga )
         rescue
