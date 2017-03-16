@@ -18,14 +18,17 @@ namespace :feeds do
         puts podcast.category + " <=> " + podcast.title
         id = podcast.itunes_url.split("/").last[2..20]
 
-        begin
-          metadata = open("https://itunes.apple.com/lookup?id=#{id}&entity=podcast",
-                          read_timeout: 5){|f| f.read }
-          podcast.feed_url = JSON.parse(metadata)["results"].first["feedUrl"]
+        if well_known = Podcast.where(title: podcast.title).where.not(feed_url: nil).first
+          podcast.feed_url = well_known.feed_url
           # %x( paplay #{📁}audio-volume-change.oga )
-        rescue
-          podcast.failed = true
-          # %x( paplay #{📁}bell.oga )
+        else
+          begin
+            metadata = open("https://itunes.apple.com/lookup?id=#{id}&entity=podcast",
+                            read_timeout: 5){|f| f.read }
+            podcast.feed_url = JSON.parse(metadata)["results"].first["feedUrl"]
+          rescue
+            podcast.failed = true
+          end
         end
 
         updated_podcasts << podcast
