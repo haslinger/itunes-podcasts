@@ -10,6 +10,11 @@ class PodcastsController < ApplicationController
     end
   end
 
+  def export
+    @category = params[:id]
+    @podcasts = Podcast.where(category: @category)
+  end
+
   def show
   end
 

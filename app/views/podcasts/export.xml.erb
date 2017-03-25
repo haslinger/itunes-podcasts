@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='no' ?>
+<opml version="1.1">
+  <head>
+    <title>Podcast Feeds</title>
+    <dateCreated><%= Time.now() %></dateCreated>
+    <dateModified><%= Time.now() %> </dateModified>
+  </head>
+
+  <body>
+    <outline text="<%= @category %>">
+      <% @podcasts.each do |podcast| %>
+        <outline text="<%= podcast.title %>" xmlUrl="<%= podcast.feed_url %>" type="rss" />
+      <% end %>
+    </outline>
+  </body>
+</opml>
