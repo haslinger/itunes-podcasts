@@ -80,4 +80,21 @@ namespace :podcasts do
       end
     end
   end
+
+  desc "set to done"
+  task set_to_done: :environment do
+    urls = Podcast.where(category: "education-language-courses").select(:itunes_url)
+    puts urls.count.to_s + " urls exported."
+
+    podcasts = Podcast.where(itunes_url: urls)
+    podcasts.each {|p| p.done == true}
+
+    Podcast.transaction do
+      podcasts.map(&:save)
+    end
+    puts podcasts.count.to_s + " podcasts done."
+
+    todo = Podcast.where(done: [nil, false]).count
+    puts todo.to_s + " podcasts remaining."
+  end
 end
