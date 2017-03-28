@@ -29,6 +29,7 @@ namespace :podcasts do
           "technology-gadgets", "technology-podcasting", "technology-software-how-to",
           "technology-tech-news"]
 
+
   desc "download podcasts"
   task download: :environment do
     CATS.each do |category|
@@ -60,6 +61,7 @@ namespace :podcasts do
     end
   end
 
+
   desc "import podcasts"
   task import: :environment do
     CATS.each do |category|
@@ -80,6 +82,7 @@ namespace :podcasts do
       end
     end
   end
+
 
   desc "set to done"
   task set_to_done: :environment do
