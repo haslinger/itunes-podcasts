@@ -11,7 +11,8 @@ class PodcastDatatable < AjaxDatatablesRails::Base
       'Podcast.feed_url',
       'Podcast.updated_at',
       'Podcast.created_at',
-      'Podcast.failed'
+      'Podcast.failed',
+      'Podcast.done'
     ]
   end
 
@@ -28,7 +29,7 @@ class PodcastDatatable < AjaxDatatablesRails::Base
   def self.columns
     'columns: [' +
       '{sortable: true, searchable: true},' * 5 +
-      '{sortable: true, searchable: false},' * 3 +
+      '{sortable: true, searchable: false},' * 4 +
       '{sortable: false, searchable: false},' * 3 +
     ']'
   end
@@ -46,6 +47,7 @@ class PodcastDatatable < AjaxDatatablesRails::Base
         l(record.updated_at, format: :long),
         l(record.created_at, format: :long),
         record.failed,
+        record.done,
         link_to('show', podcast_path(record)),
         link_to('edit', edit_podcast_path(record)),
         link_to('delete', podcast_path(record),

@@ -86,18 +86,21 @@ namespace :podcasts do
 
   desc "set to done"
   task set_to_done: :environment do
-    urls = Podcast.where(category: "education-language-courses").select(:itunes_url)
+    urls = Podcast.where(category: "science-medicine-natural-sciences").select(:itunes_url)
     puts urls.count.to_s + " urls exported."
 
     podcasts = Podcast.where(itunes_url: urls)
-    podcasts.each {|p| p.done == true}
+    podcasts.each {|p| p.done = true}
 
     Podcast.transaction do
       podcasts.map(&:save)
     end
-    puts podcasts.count.to_s + " podcasts done."
+    puts podcasts.count.to_s + " podcasts done with this category."
 
     todo = Podcast.where(done: [nil, false]).count
     puts todo.to_s + " podcasts remaining."
+
+    done = Podcast.where(done: true).count
+    puts done.to_s + " podcasts done overall."
   end
 end
