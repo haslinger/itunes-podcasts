@@ -12,7 +12,7 @@ class PodcastsController < ApplicationController
 
   def export
     @category = params[:id]
-    @podcasts = Podcast.where(category: @category)
+    @podcasts = Podcast.where(category: @category, done: [nil, false])
   end
 
   def show

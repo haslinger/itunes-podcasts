@@ -42,7 +42,7 @@ namespace :categories do
     "education-educational-technology": "#{📁}education-educational-technology/id1468?mt=2",
     "education-higher-education":       "#{📁}education-higher-education/id1416?mt=2",
     "education-k-12":                   "#{📁}education-k-12/id1415?mt=2",
-    "education-language-courses":       "#{📁}education-language-courses/id1469?mt=2",
+#    "education-language-courses":       "#{📁}education-language-courses/id1469?mt=2",
     "education-training":               "#{📁}education-training/id1470?mt=2",
 
     "games-hobbies-automotive":  "#{📁}games-hobbies-automotive/id1454?mt=2",
@@ -69,11 +69,11 @@ namespace :categories do
     "religion-spirituality-other":        "#{📁}religion-spirituality-other/id1464?mt=2",
     "religion-spirituality-spirituality": "#{📁}religion-spirituality-spirituality/id1444?mt=2",
 
-    "science-medicine-medicine":         "#{📁}science-medicine-medicine/id1478?mt=2",
-    "science-medicine-natural-sciences": "#{📁}science-medicine-natural-sciences/id1477?mt=2",
-    "science-medicine-social-sciences":  "#{📁}science-medicine-social-sciences/id1479?mt=2",
+#    "science-medicine-medicine":         "#{📁}science-medicine-medicine/id1478?mt=2",
+#    "science-medicine-natural-sciences": "#{📁}science-medicine-natural-sciences/id1477?mt=2",
+#    "science-medicine-social-sciences":  "#{📁}science-medicine-social-sciences/id1479?mt=2",
 
-    "society-culture-history":           "#{📁}society-culture-history/id1462?mt=2",
+#    "society-culture-history":           "#{📁}society-culture-history/id1462?mt=2",
     "society-culture-personal-journals": "#{📁}society-culture-personal-journals/id1302?mt=2",
     "society-culture-philosophy":        "#{📁}society-culture-philosophy/id1443?mt=2",
     "society-culture-places-travel":     "#{📁}society-culture-places-travel/id1320?mt=2",
