@@ -20,7 +20,7 @@ namespace :categories do
     music:                        "#{📁}music/id1310?mt=2",
     news_and_politics:            "#{📁}news-politics/id1311?mt=2",
     religion_and_spirituality:    "#{📁}religion-spirituality/id1314?mt=2",
-    science_and_medicine:         "#{📁}science-medicine/id1315?mt=2",
+#    science_and_medicine:         "#{📁}science-medicine/id1315?mt=2",
     society_and_culture:          "#{📁}society-culture/id1324?mt=2",
     sports_and_recreation:        "#{📁}sports-recreation/id1316?mt=2",
     tv_and_film:                  "#{📁}tv-film/id1309?mt=2",
@@ -83,8 +83,8 @@ namespace :categories do
     "sports-recreation-outdoor":             "#{📁}sports-recreation-outdoor/id1456?mt=2",
     "sports-recreation-professional":        "#{📁}sports-recreation-professional/id1465?mt=2",
 
-    "technology-gadgets":         "#{📁}technology-gadgets/id1446?mt=2",
-    "technology-podcasting":      "#{📁}technology-podcasting/id1450?mt=2",
+#    "technology-gadgets":         "#{📁}technology-gadgets/id1446?mt=2",
+#    "technology-podcasting":      "#{📁}technology-podcasting/id1450?mt=2",
     "technology-software-how-to": "#{📁}technology-software-how-to/id1480?mt=2",
     "technology-tech-news":       "#{📁}technology-tech-news/id1448?mt=2"
   }
