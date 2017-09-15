@@ -86,7 +86,7 @@ namespace :categories do
 #    "technology-gadgets":         "#{📁}technology-gadgets/id1446?mt=2",
 #    "technology-podcasting":      "#{📁}technology-podcasting/id1450?mt=2",
 #    "technology-software-how-to": "#{📁}technology-software-how-to/id1480?mt=2",
-    "technology-tech-news":       "#{📁}technology-tech-news/id1448?mt=2"
+#    "technology-tech-news":       "#{📁}technology-tech-news/id1448?mt=2"
   }
 
 

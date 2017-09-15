@@ -86,7 +86,7 @@ namespace :podcasts do
 
   desc "set to done"
   task set_to_done: :environment do
-    urls = Podcast.where(category: "technology-software-how-to").select(:itunes_url)
+    urls = Podcast.where(category: "technology-tech-news").select(:itunes_url)
     puts urls.count.to_s + " urls exported."
 
     podcasts = Podcast.where(itunes_url: urls)
