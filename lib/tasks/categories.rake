@@ -24,7 +24,7 @@ namespace :categories do
     society_and_culture:          "#{📁}society-culture/id1324?mt=2",
     sports_and_recreation:        "#{📁}sports-recreation/id1316?mt=2",
     tv_and_film:                  "#{📁}tv-film/id1309?mt=2",
-    technology:                   "#{📁}technology/id1318?mt=2",
+#    technology:                   "#{📁}technology/id1318?mt=2",
 
     "arts-design":          "#{📁}arts-design/id1402?mt=2",
     "arts-fashion-beauty":  "#{📁}arts-fashion-beauty/id1402?mt=2",
