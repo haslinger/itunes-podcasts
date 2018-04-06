@@ -80,7 +80,7 @@ namespace :categories do
 
 #    "sports-recreation-amateur":             "#{📁}sports-recreation-amateur/id1467?mt=2",
 #    "sports-recreation-college-high-school": "#{📁}sports-recreation-college-high-school/id1466?mt=2",
-    "sports-recreation-outdoor":             "#{📁}sports-recreation-outdoor/id1456?mt=2",
+#    "sports-recreation-outdoor":             "#{📁}sports-recreation-outdoor/id1456?mt=2",
     "sports-recreation-professional":        "#{📁}sports-recreation-professional/id1465?mt=2",
 
 #    "technology-gadgets":         "#{📁}technology-gadgets/id1446?mt=2",
