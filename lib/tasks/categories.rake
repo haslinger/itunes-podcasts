@@ -12,7 +12,7 @@ namespace :categories do
     arts:                         "#{📁}arts/id1301?mt=2",
     business:                     "#{📁}business/id1321?mt=2",
     comedy:                       "#{📁}comedy/id1303?mt=2",
-    education:                    "#{📁}education/id1304?mt=2",
+#    education:                    "#{📁}education/id1304?mt=2",
     games_and_hobbies:            "#{📁}games-hobbies/id1323?mt=2",
     government_and_organizations: "#{📁}government-organizations/id1325?mt=2",
     health:                       "#{📁}health/id1307?mt=2",
